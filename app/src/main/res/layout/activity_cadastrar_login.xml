@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#DFE9F5"
+        tools:context=".telaLoginCadastrar">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/cadastre_se"
+            android:textSize="34sp"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <EditText
+                android:id="@+id/cadastrarEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/email_hint"
+                android:inputType="textEmailAddress"
+                android:autofillHints="emailAddress"
+                android:importantForAutofill="yes" />
+
+            <EditText
+                android:id="@+id/cadastrarSenha"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/senha_hint"
+                android:inputType="textPassword"
+                android:autofillHints="password"
+                android:importantForAutofill="yes" />
+
+            <EditText
+                android:id="@+id/cadastrarConfSenha"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="@string/confirmar_senha"
+                android:inputType="textPassword"
+                android:autofillHints="password"
+                android:importantForAutofill="yes" />
+
+            <Spinner
+                android:id="@+id/cadastrarTipoUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:spinnerMode="dialog"
+                android:contentDescription="@string/descricao_tipo_usuario" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#DFE9F5" />
+
+            <Button
+                android:id="@+id/btLoginCadastrar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:backgroundTint="#1f1f1e"
+                android:text="@string/cadastrar"
+                android:textColor="#FFFFFF"
+                android:contentDescription="@string/descricao_botao_cadastrar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/telaLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ja_possui_conta"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.141"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

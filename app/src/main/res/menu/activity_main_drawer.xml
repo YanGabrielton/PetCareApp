@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/menu_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_perfil_tutor"
+            android:icon="@drawable/menu_perfil"
+            android:title="@string/menu_perfil" />
+        <item
+            android:id="@+id/nav_pet"
+            android:icon="@drawable/menu_pet"
+            android:title="@string/menu_pet" />
+        <item
+            android:id="@+id/nav_cartao_vacina"
+            android:icon="@drawable/menu_vacina"
+            android:title="@string/menu_cartao_vacina" />
+        <item
+            android:id="@+id/nav_doenca"
+            android:icon="@drawable/menu_doenca"
+            android:title="Doenças" />
+        <item
+            android:id="@+id/nav_campanha"
+            android:icon="@drawable/menu_campanha"
+            android:title="@string/menu_campanha" />
+        <item
+            android:id="@+id/nav_mensagem"
+            android:icon="@drawable/menu_message"
+            android:title="@string/menu_mensagem" />
+        <item
+            android:id="@+id/nav_buscar_clinica"
+            android:icon="@drawable/menu_clinica"
+            android:title="@string/menu_buscar_clinica" />
+    </group>
+</menu>

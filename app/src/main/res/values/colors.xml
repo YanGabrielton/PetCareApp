@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Colors -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <!-- App Primary Colors -->
+    <color name="colorPrimary">#3F51B5</color>         <!-- Indigo 500 -->
+    <color name="colorPrimaryDark">#303F9F</color>     <!-- Indigo 700 -->
+    <color name="colorAccent">#FF4081</color>          <!-- Pink A200 -->
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>         <!-- Almost black -->
+    <color name="text_secondary">#757575</color>       <!-- Dark gray -->
+    <color name="text_hint">#BDBDBD</color>            <!-- Light gray -->
+    <color name="text_white">#FFFFFF</color>
+    <!-- Background Colors -->
+    <color name="background">#F5F5F5</color>           <!-- Light background -->
+    <color name="surface">#FFFFFF</color>              <!-- White surface -->
+    <color name="error">#F44336</color>                <!-- Red 500 -->
+    <!-- Table Colors -->
+    <color name="table_header">#3F51B5</color>         <!-- Same as Primary -->
+    <color name="table_row_even">#FAFAFA</color>
+    <color name="table_row_odd">#FFFFFF</color>
+    <!-- Borders & Dividers -->
+    <color name="divider">#BDBDBD</color>
+    <color name="border">#E0E0E0</color>
+    <!-- Feedback Colors -->
+    <color name="success">#4CAF50</color>              <!-- Green 500 -->
+    <color name="warning">#FFC107</color>              <!-- Amber 500 -->
+    <color name="info">#2196F3</color>                 <!-- Blue 500 -->
+    <color name="notification_template_icon_bg">#3333B5E5</color>
+    <color name="notification_template_icon_low_bg">#0cffffff</color>
+</resources>

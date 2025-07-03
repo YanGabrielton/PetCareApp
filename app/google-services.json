@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "564156549367",
+    "project_id": "petcareapp-ceaed",
+    "storage_bucket": "petcareapp-ceaed.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564156549367:android:ac87a136dbe182c9f8abf2",
+        "android_client_info": {
+          "package_name": "com.example.petcareapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCisUiHEb1dlf7nB153qhHeqL6YkxxxEro"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.petcareapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_perfil_tutor"
+        android:name="com.example.petcareapp.ui.perfilTutor.PerfilTutorFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/fragment_perfil_tutor" />
+
+    <fragment
+        android:id="@+id/nav_pet"
+        android:name="com.example.petcareapp.ui.pet.PetFragment"
+        android:label="@string/menu_pet"
+        tools:layout="@layout/fragment_pet" />
+
+    <fragment
+        android:id="@+id/nav_cartao_vacina"
+        android:name="com.example.petcareapp.ui.cartaoVacina.CartaoVacinaFragment"
+        android:label="@string/menu_cartao_vacina"
+        tools:layout="@layout/fragment_cartao_vacina" />
+
+    <fragment
+        android:id="@+id/nav_doenca"
+        android:name="com.example.petcareapp.ui.doenca.DoencasFragment"
+        android:label="@string/menu_doenca"
+        tools:layout="@layout/fragment_doenca" />
+
+    <fragment
+        android:id="@+id/nav_campanha"
+        android:name="com.example.petcareapp.ui.campanha.CampanhaFragment"
+        android:label="@string/menu_campanha"
+        tools:layout="@layout/fragment_campanha" />
+
+    <fragment
+        android:id="@+id/nav_mensagem"
+        android:name="com.example.petcareapp.ui.mensagem.MensagemFragment"
+        android:label="@string/menu_mensagem"
+        tools:layout="@layout/fragment_mensagem" />
+
+    <fragment
+        android:id="@+id/nav_buscar_clinica"
+        android:name="com.example.petcareapp.ui.buscarClinica.BuscarClinicaFragment"
+        android:label="@string/menu_buscar_clinica"
+        tools:layout="@layout/fragment_buscar_clinica" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.petcareapp.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.petcareapp.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>

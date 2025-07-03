@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true"
+    android:importantForAccessibility="yes"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="178dp"
+            android:layout_height="93dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/logo_petcare_descricao"
+            android:focusable="false"
+            android:importantForAccessibility="yes"
+            android:rotationX="-3"
+            android:rotationY="-2"
+            android:src="@drawable/menu_pet"
+            android:textCursorDrawable="@drawable/menu_pet"
+            android:visibility="visible"
+            app:tint="#0B1393"
+            tools:visibility="visible"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="@string/label_doenca"
+            android:textColor="#0B1393"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:importantForAccessibility="yes"
+            android:text="@string/label_pesquisar"
+            android:textColor="#000000"
+            android:textSize="24sp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxStrokeColor="#3F51B5"
+            app:hintTextColor="#3F51B5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editPesquisar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:focusableInTouchMode="true"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/hint_pesquisar"
+                android:importantForAccessibility="no"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColor="#333333"
+                android:textColorHint="#00BCD4"
+                android:textSize="20sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:importantForAccessibility="yes"
+            android:labelFor="@id/editEspecie"
+            android:text="@string/label_especie"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxStrokeColor="#3F51B5"
+            app:endIconMode="dropdown_menu"
+            app:hintTextColor="#3F51B5">
+
+            <AutoCompleteTextView
+                android:id="@+id/editEspecie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/hint_especie"
+                android:importantForAccessibility="yes"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColor="#0A0A0A"
+                android:textColorHint="#3C3C3C"
+                android:textSize="24sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:importantForAccessibility="yes"
+            android:labelFor="@id/editDoenca"
+            android:text="@string/label_doenca"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxStrokeColor="#3F51B5"
+            app:endIconMode="dropdown_menu"
+            app:hintTextColor="#3F51B5">
+
+            <AutoCompleteTextView
+                android:id="@+id/editDoenca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/hint_doenca"
+                android:importantForAccessibility="yes"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColor="#212121"
+                android:textColorHint="#3C3C3C"
+                android:textSize="24sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:importantForAccessibility="yes"
+            android:labelFor="@id/editNome"
+            android:text="@string/label_nome"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxStrokeColor="#3F51B5"
+            app:hintTextColor="#3F51B5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/hint_nome"
+                android:importantForAccessibility="yes"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColor="#212121"
+                android:textColorHint="#757575"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:importantForAccessibility="yes"
+            android:text="@string/label_raca"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="8dp"
+            app:boxCornerRadiusBottomStart="8dp"
+            app:boxCornerRadiusTopEnd="8dp"
+            app:boxCornerRadiusTopStart="8dp"
+            app:boxStrokeColor="#424242"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeWidthFocused="3dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editRaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:hint="@string/hint_raca"
+                android:importantForAccessibility="yes"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColor="#212121"
+                android:textColorHint="#757575"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/label_detalhes"
+            android:importantForAccessibility="no"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.PetCareApp.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:boxBackgroundMode="outline"
+            app:boxStrokeColor="#424242"
+            app:hintTextColor="#3F51B5">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/doencasFragment_detalhes"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@android:color/transparent"
+                android:gravity="top|start"
+                android:hint="@string/hint_detalhes"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:padding="8dp"
+                android:textColor="#19191A"
+                android:textColorHint="#3C3C3C"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPesquisar"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#0B1393"
+                android:contentDescription="@string/editpesquisar"
+                android:elevation="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:minHeight="48dp"
+                android:text="@string/action_executar_pesquisa"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                app:cornerRadius="4dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAdicionarTabela"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#F60F00"
+                android:elevation="2dp"
+                android:fontFamily="sans-serif-medium"
+                android:minHeight="48dp"
+                android:text="@string/botao_adicionar_tabela"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:cornerRadius="4dp"/>
+        </LinearLayout>
+
+        <!-- Cabeçalho fixo da tabela -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:background="#3F51B5">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="ID"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Espécie"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="Nome"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:text="Raça"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:text="Doença"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:text="Detalhes"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- RecyclerView para exibir os itens da tabela -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewDoencas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </LinearLayout>
+</ScrollView>

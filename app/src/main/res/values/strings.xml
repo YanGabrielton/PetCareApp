@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="logo_petcare_descricao" translatable="false">Logo do PetCareApp</string>
+    <string name="pet_care" translatable="false">PET CARE</string>
+    <string name="navigation_drawer_open" translatable="false">Abrir menu de navigation</string>
+    <string name="navigation_drawer_close" translatable="false">Fechar menu de navigation</string>
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_subtitle" translatable="false">android.studio@android.com</string>
+    <string name="nav_header_desc" translatable="false">Cabeçalho de navigation</string>
+    <!-- Menu Principal -->
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_perfil" translatable="false">Perfil</string>
+    <string name="menu_pet" translatable="false">Pets</string>
+    <string name="menu_cartao_vacina" translatable="false">Vacinas</string>
+    <string name="menu_buscar_clinica" translatable="false">Clínicas</string>
+    <string name="menu_doenca" translatable="false">Doenças</string>
+    <string name="menu_campanha" translatable="false">Campanhas</string>
+    <string name="menu_mensagem" translatable="false">Mensagens</string>
+    <string name="menu_cadastrar_adm" translatable="false">Cadastrar</string>
+    <string name="menu_gallery" translatable="false">Galleria</string>
+    <string name="menu_slideshow" translatable="false">Slide</string>
+    <string name="action_sair" translatable="false">Sair</string>
+    <string name="action_settings" translatable="false">Configurações</string>
+    <!-- Pesquisa e Formulário -->
+    <string name="hint_pesquisar" translatable="false">Digite para pesquisar</string>
+    <string name="hint_especie" translatable="false">Espécie do animal</string>
+    <string name="hint_doenca" translatable="false">Nome da doença</string>
+    <string name="hint_nome" translatable="false">Nome do animal</string>
+    <string name="hint_raca" translatable="false">Raça do animal</string>
+    <string name="hint_detalhes" translatable="false">Detalhes da doença</string>
+    <!--Labels -->
+    <string name="label_pesquisar" translatable="false">Pesquisar</string>
+    <string name="label_especie" translatable="false">Espécie</string>
+    <string name="label_doenca" translatable="false">Doença</string>
+    <string name="label_nome" translatable="false">Nome</string>
+    <string name="label_raca" translatable="false">Raça</string>
+    <string name="label_detalhes" translatable="false">Detalhes</string>
+    <string name="action_executar_pesquisa" translatable="false">Pesquisar</string>
+    <string name="botao_adicionar_tabela" translatable="false">Adicionar à Tabela</string>
+    <string name="entrar" translatable="false">ENTRAR</string>
+    <string name="cadastrar" translatable="false">CADASTRAR</string>
+    <string name="cadastre_se" translatable="false">CADASTRE-SE</string>
+
+    <string name="email" translatable="false">Email</string>
+    <string name="senha" translatable="false">Senha</string>
+    <string name="confirmar_senha" translatable="false">Confirmar senha</string>
+    <string name="email_hint" translatable="false">Digite seu e-mail</string>
+    <string name="senha_hint" translatable="false">Digite sua senha</string>
+    <string name="descricao_tipo_usuario" translatable="false">Selecione o tipo de usuário</string>
+    <string name="nao_possui_conta_cadastre_se" translatable="false">Não possui conta? Cadastre-se!</string>
+    <string name="ja_possui_conta" translatable="false">Já possui conta?</string>
+    <!-- Acessibilidade -->
+    <string name="descricao_botao_menu_especie" translatable="false">Menu de espécies de animais</string>
+    <string name="descricao_botao_menu_doenca" translatable="false">Menu de doenças animais</string>
+    <string name="descricao_botao_adicionar_tabela" translatable="false">Botão para adicionar doença à tabela</string>
+    <string name="descricao_botao_cadastrar" translatable="false">Botão para cadastrar usuário</string>
+    <string name="descricao_botao_entrar" translatable="false">Botão para faker login</string>
+    <string name="descricao_edit_especie" translatable="false">Campo de seleção de espécie do animal</string>
+    <string name="descricao_edit_doenca" translatable="false">Campo de seleção de doença</string>
+    <!-- Mensagens -->
+    <string name="msg_campo_obrigatorio" translatable="false">Preencha este campo</string>
+    <string name="msg_erro_conexao" translatable="false">Erro de conexão com o servidor</string>
+    <string name="msg_sucesso_cadastro" translatable="false">Doença cadastrada com sucesso!</string>
+    <string name="msg_erro_cadastro" translatable="false">Erro ao cadastrar doença</string>
+    <string name="user_not_authenticated" translatable="false">Usuário não autenticado</string>
+    <string name="user_not_found" translatable="false">Usuário não encontrado</string>
+    <string name="error_loading_data" translatable="false">Erro ao carregar dados</string>
+    <string name="user_id_display" translatable="false">ID do Usuário: %1$s</string>
+    <string name="hello_blank_fragment" translatable="false">Fragmento em branco</string>
+    <string name="editpesquisar" translatable="false">editPesquisar</string>
+    <string name="id" translatable="false">ID</string>
+    <string name="esp_cie" translatable="false">Espécie Científica</string>
+    <string name="nome" translatable="false">Nome</string>
+    <string name="ra_ca" translatable="false">Raça</string>
+    <string name="doen_ca" translatable="false">Doença</string>
+    <string name="detalhes" translatable="false">Detalhes</string>
+    <string name="especie" translatable="false">Espécie</string>
+    <string name="raca" translatable="false">Raça</string>
+    <string name="doenca" translatable="false">Doença</string>
+    <string name="gcm_defaultSenderId" translatable="false">564156549367</string>
+    <string name="google_api_key" translatable="false">AIzaSyCisUiHEb1dlf7nB153qhHeqL6YkxxxEro</string>
+    <string name="google_app_id" translatable="false">1:564156549367:android:ac87a136dbe182c9f8abf2</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCisUiHEb1dlf7nB153qhHeqL6YkxxxEro</string>
+    <string name="google_storage_bucket" translatable="false">petcareapp-ceaed.firebasestorage.app</string>
+    <string name="project_id" translatable="false">petcareapp-ceaed</string>
+    <string name="perfil_tutor" translatable="false">PERFIL TUTOR</string>
+    <string name="perfil_adm" translatable="false">PERFIL ADM</string>
+    <string name="perfil_clinica" translatable="false">PERFIL CLINICA</string>
+</resources>
