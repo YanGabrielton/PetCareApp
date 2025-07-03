@@ -25,7 +25,7 @@
             android:layout_height="4dp"
             android:backgroundTint="@color/colorPrimary"
             android:indeterminate="true"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <ImageView
             android:layout_width="178dp"
@@ -42,7 +42,7 @@
             android:textCursorDrawable="@drawable/menu_pet"
             android:visibility="visible"
             app:tint="#0B1393"
-            tools:visibility="visible"/>
+            tools:visibility="visible" />
 
         <TextView
             android:layout_width="match_parent"
@@ -54,7 +54,7 @@
             android:text="@string/label_doenca"
             android:textColor="#0B1393"
             android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
@@ -64,7 +64,7 @@
             android:importantForAccessibility="yes"
             android:text="@string/label_pesquisar"
             android:textColor="#000000"
-            android:textSize="24sp"/>
+            android:textSize="24sp" />
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -234,7 +234,7 @@
                 android:textColor="#212121"
                 android:textColorHint="#757575"
                 android:textSize="24sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
@@ -242,11 +242,10 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:fontFamily="sans-serif-medium"
-            android:text="@string/label_detalhes"
             android:importantForAccessibility="no"
+            android:text="@string/label_detalhes"
             android:textColor="#000000"
-            android:textSize="24sp"
-            />
+            android:textSize="24sp" />
 
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.PetCareApp.Button"
@@ -298,7 +297,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
-                app:cornerRadius="4dp"/>
+                app:cornerRadius="4dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnAdicionarTabela"
@@ -315,7 +314,7 @@
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp"
-                app:cornerRadius="4dp"/>
+                app:cornerRadius="4dp" />
         </LinearLayout>
 
         <!-- Cabeçalho fixo da tabela -->
@@ -327,56 +326,56 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
-                android:orientation="horizontal"
-                android:background="#3F51B5">
+                android:background="#3F51B5"
+                android:orientation="horizontal">
 
                 <TextView
                     android:layout_width="80dp"
                     android:layout_height="match_parent"
+                    android:gravity="center"
                     android:text="ID"
                     android:textColor="#FFFFFF"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
+                    android:gravity="center"
                     android:text="Espécie"
                     android:textColor="#FFFFFF"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
+                    android:gravity="center"
                     android:text="Nome"
                     android:textColor="#FFFFFF"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
+                    android:gravity="center"
                     android:text="Raça"
                     android:textColor="#FFFFFF"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="150dp"
                     android:layout_height="match_parent"
+                    android:gravity="center"
                     android:text="Doença"
                     android:textColor="#FFFFFF"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="200dp"
                     android:layout_height="match_parent"
+                    android:gravity="center"
                     android:text="Detalhes"
                     android:textColor="#FFFFFF"
-                    android:gravity="center"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
         </HorizontalScrollView>
 
@@ -387,6 +386,6 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:scrollbars="vertical"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
     </LinearLayout>
 </ScrollView>
